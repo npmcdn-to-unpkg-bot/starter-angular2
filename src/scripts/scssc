@@ -1,0 +1,7 @@
+for input in ./app/style/scss/*.scss; do
+	input_dir=${input%/*}
+	input_file_name=${input#$input_dir/}
+	name=${input_file_name%.*}
+
+	node-sass --include-path app/style/scss app/style/scss/$name.scss app/style/css/$name.css
+done

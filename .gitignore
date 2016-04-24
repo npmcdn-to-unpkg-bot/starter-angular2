@@ -1,0 +1,8 @@
+node_modules
+typings
+
+.typingsrc
+*.stackdump
+
+src/app/**/*.js
+src/app/**/*.js.map
